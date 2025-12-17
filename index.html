@@ -1,0 +1,2020 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Salon Cantik Alami - Perawatan rambut, wajah, dan makeup profesional di Kemang. Beautician bersertifikat, produk premium, hasil memuaskan.">
+    <meta name="keywords" content="salon kemang, hair treatment jakarta, facial jakarta, makeup artist, bridal makeup, beauty salon jakarta selatan">
+    <title>Salon Cantik Alami - Kecantikan Alami dari Ahlinya</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&family=Great+Vibes&display=swap');
+        
+        :root {
+            --primary: #D4458C;
+            --secondary: #F8B4D9;
+            --accent: #FFD700;
+            --dark: #2D2D2D;
+            --bg: #FFF9FC;
+            --neutral: #F5F5F5;
+            --white: #FFFFFF;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--dark);
+            background: var(--bg);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .script-text {
+            font-family: 'Great Vibes', cursive;
+            color: var(--primary);
+        }
+        
+        /* Header Navigation */
+        header {
+            background: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--primary);
+        }
+        
+        .btn {
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btn-primary {
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        .btn-primary:hover {
+            background: #b83876;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(212, 69, 140, 0.3);
+        }
+        
+        .btn-secondary {
+            background: var(--white);
+            color: var(--primary);
+            border: 2px solid var(--primary);
+        }
+        
+        .btn-secondary:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+        
+        .mobile-menu {
+            display: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            color: var(--primary);
+        }
+        
+        .mobile-menu::before {
+            content: '☰';
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--white);
+            padding: 6rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+        }
+        
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            animation: fadeInUp 0.8s ease;
+        }
+        
+        .hero .subheadline {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            animation: fadeInUp 1.2s ease;
+        }
+        
+        .trust-badges {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+        
+        /* Sections */
+        section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .section-header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        /* Featured Services */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(212, 69, 140, 0.2);
+        }
+        
+        .service-image {
+            width: 100%;
+            height: 250px;
+            background: var(--neutral);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: var(--primary);
+        }
+        
+        .service-content {
+            padding: 1.5rem;
+        }
+        
+        .service-content h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .service-content p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+        
+        /* Why Choose Us */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .feature-item {
+            text-align: center;
+            padding: 2rem;
+            background: var(--white);
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+        
+        .feature-item .icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .feature-item h3 {
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        
+        /* Testimonials */
+        .testimonials-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .testimonial {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            display: none;
+        }
+        
+        .testimonial.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .testimonial-stars {
+            color: var(--accent);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            color: #555;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        .testimonial-nav {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .testimonial-nav button {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            border: none;
+            background: var(--neutral);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .testimonial-nav button.active {
+            background: var(--primary);
+            width: 30px;
+            border-radius: 10px;
+        }
+        
+        /* Instagram Feed */
+        .instagram-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .instagram-item {
+            aspect-ratio: 1;
+            background: var(--neutral);
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--primary);
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        
+        .instagram-item:hover {
+            transform: scale(1.05);
+        }
+        
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--white);
+            text-align: center;
+            padding: 4rem 2rem;
+            border-radius: 20px;
+            margin: 2rem auto;
+        }
+        
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .cta-section p {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: var(--white);
+            padding: 3rem 2rem 1rem;
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section a {
+            color: var(--white);
+            text-decoration: none;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        
+        .footer-section a:hover {
+            opacity: 1;
+            color: var(--secondary);
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+        }
+        
+        .social-icons a {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+            color: var(--white);
+            cursor: pointer;
+            text-decoration: none;
+            padding: 12px;
+            box-sizing: border-box;
+        }
+        
+        .social-icons a:active {
+            transform: scale(0.95);
+        }
+        
+        .social-icons a svg {
+            fill: var(--white);
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        
+        .social-icons a:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            opacity: 0.7;
+        }
+        
+        /* Page-specific styles for other pages */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: var(--white);
+            padding: 4rem 2rem 2rem;
+            text-align: center;
+        }
+        
+        .breadcrumb {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            opacity: 0.9;
+        }
+        
+        .breadcrumb a {
+            color: var(--white);
+            text-decoration: none;
+        }
+        
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Services Page */
+        .service-category {
+            background: var(--white);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+        
+        .service-category h3 {
+            color: var(--primary);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--secondary);
+        }
+        
+        .service-item {
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--neutral);
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            gap: 1rem;
+        }
+        
+        .service-item:last-child {
+            border-bottom: none;
+        }
+        
+        .service-info h4 {
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+        
+        .service-description {
+            color: #666;
+            font-size: 0.95rem;
+            margin-bottom: 0.3rem;
+        }
+        
+        .service-duration {
+            color: #999;
+            font-size: 0.85rem;
+            font-style: italic;
+        }
+        
+        .service-price {
+            background: var(--accent);
+            color: var(--dark);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            white-space: nowrap;
+            min-width: 120px;
+            text-align: center;
+        }
+        
+        /* Gallery Page */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+        
+        .gallery-item {
+            aspect-ratio: 1;
+            background: var(--neutral);
+            border-radius: 10px;
+            overflow: hidden;
+            cursor: pointer;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--primary);
+        }
+        
+        .gallery-item:hover::after {
+            content: '🔍';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            color: var(--white);
+            background: rgba(212, 69, 140, 0.8);
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* About Page */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .team-member {
+            background: var(--white);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .team-photo {
+            width: 100%;
+            height: 300px;
+            background: var(--neutral);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            color: var(--primary);
+        }
+        
+        .team-info {
+            padding: 1.5rem;
+        }
+        
+        .team-info h3 {
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+        }
+        
+        .team-role {
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .team-bio {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        .certifications {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        
+        .cert-badge {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            text-align: center;
+            min-width: 150px;
+        }
+        
+        .cert-badge i {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+        
+        .cert-badge {
+            font-size: 2rem;
+        }
+        
+        /* Contact Page */
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-info {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: start;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: nowrap;
+        }
+        
+        .contact-item i {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-top: 0.2rem;
+            min-width: 30px;
+            display: none;
+        }
+        
+        .contact-item > div:first-child {
+            min-width: 40px;
+            flex-shrink: 0;
+            text-align: center;
+        }
+        
+        .contact-details {
+            flex: 1;
+        }
+        
+        .contact-details h3 {
+            color: var(--primary);
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+        
+        .contact-details p {
+            color: #666;
+            margin: 0.2rem 0;
+        }
+        
+        .contact-details a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        
+        .contact-details a:hover {
+            text-decoration: underline;
+        }
+        
+        .map-container {
+            background: var(--neutral);
+            height: 400px;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        
+        .contact-form {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+            margin-top: 2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: var(--dark);
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid var(--neutral);
+            border-radius: 10px;
+            font-family: 'Poppins', sans-serif;
+            transition: border-color 0.3s;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        
+        /* FAQ */
+        .faq-container {
+            max-width: 800px;
+            margin: 2rem auto;
+        }
+        
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--dark);
+            transition: background 0.3s;
+        }
+        
+        .faq-question:hover {
+            background: var(--bg);
+        }
+        
+        .faq-question i {
+            color: var(--primary);
+            transition: transform 0.3s;
+            display: none;
+        }
+        
+        .faq-question::after {
+            content: '▼';
+            color: var(--primary);
+            font-size: 0.8rem;
+            transition: transform 0.3s;
+        }
+        
+        .faq-item.active .faq-question::after {
+            transform: rotate(180deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+        
+        .faq-answer p {
+            padding: 0 1.5rem 1.5rem;
+            color: #666;
+            line-height: 1.8;
+        }
+        
+        /* Back to top button */
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            width: 50px;
+            height: 50px;
+            background: var(--primary);
+            color: var(--white);
+            border-radius: 50%;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(212, 69, 140, 0.3);
+            transition: all 0.3s;
+            z-index: 999;
+        }
+        
+        .back-to-top:hover {
+            background: #b83876;
+            transform: translateY(-5px);
+        }
+        
+        .back-to-top.show {
+            display: flex;
+        }
+        
+        /* WhatsApp Floating Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 2rem;
+            left: 2rem;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+            cursor: pointer;
+            z-index: 999;
+            animation: pulse 2s infinite;
+            text-decoration: none;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+        
+        .whatsapp-float:active {
+            transform: scale(0.95);
+        }
+        
+        .whatsapp-float svg {
+            fill: var(--white);
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .mobile-menu {
+                display: block;
+            }
+            
+            nav ul {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                flex-direction: column;
+                padding: 1rem;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            }
+            
+            nav ul.active {
+                display: flex;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero .subheadline {
+                font-size: 1rem;
+            }
+            
+            .section-header h2 {
+                font-size: 2rem;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+            
+            .service-item {
+                flex-direction: column;
+            }
+            
+            .service-price {
+                align-self: flex-start;
+            }
+            
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+            }
+        }
+        
+        /* Hide other pages initially */
+        .page-content {
+            display: none;
+        }
+        
+        .page-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/6282199887766?text=Halo%20Salon%20Cantik%20Alami%2C%20saya%20ingin%20booking%20appointment" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+    </a>
+    
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        ⬆️
+    </div>
+    
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <a href="#home" class="logo" onclick="navigateTo('home')">Salon Cantik Alami</a>
+            <div class="mobile-menu" onclick="toggleMenu()"></div>
+            <nav>
+                <ul id="navMenu">
+                    <li><a href="#home" onclick="navigateTo('home')">Home</a></li>
+                    <li><a href="#services" onclick="navigateTo('services')">Layanan</a></li>
+                    <li><a href="#gallery" onclick="navigateTo('gallery')">Gallery</a></li>
+                    <li><a href="#about" onclick="navigateTo('about')">Tentang Kami</a></li>
+                    <li><a href="#contact" onclick="navigateTo('contact')">Kontak</a></li>
+                    <li><a href="https://wa.me/6282199887766?text=Halo%20Salon%20Cantik%20Alami%2C%20saya%20ingin%20booking%20appointment" class="btn btn-primary" target="_blank">Booking</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- HOME PAGE -->
+    <div id="home" class="page-content active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Kecantikan Alami dari <span class="script-text">Ahlinya</span></h1>
+                <p class="subheadline">Perawatan rambut, wajah, dan makeup profesional di Kemang. Beautician bersertifikat, produk premium, hasil memuaskan.</p>
+                <div class="hero-buttons">
+                    <a href="#services" onclick="navigateTo('services')" class="btn btn-primary">Lihat Layanan</a>
+                    <a href="https://wa.me/6282199887766?text=Halo%20Salon%20Cantik%20Alami%2C%20saya%20ingin%20booking%20appointment" class="btn btn-secondary" target="_blank">Booking via WhatsApp</a>
+                </div>
+                <div class="trust-badges">
+                    <div class="badge">
+                        ⭐
+                        <span>3+ Tahun Berpengalaman</span>
+                    </div>
+                    <div class="badge">
+                        👥
+                        <span>500+ Client Puas</span>
+                    </div>
+                    <div class="badge">
+                        🎓
+                        <span>Beautician Bersertifikat</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Featured Services -->
+        <section>
+            <div class="section-header">
+                <h2>Layanan Unggulan Kami</h2>
+                <p>Berbagai treatment kecantikan profesional untuk Anda</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        ✂️
+                    </div>
+                    <div class="service-content">
+                        <h3>Hair Treatment</h3>
+                        <p>Dari basic cut hingga perawatan rambut rusak dengan produk premium L'Oreal dan Kerastase</p>
+                        <a href="#services" onclick="navigateTo('services')" class="btn btn-secondary">Lihat Detail →</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        💆‍♀️
+                    </div>
+                    <div class="service-content">
+                        <h3>Facial & Spa</h3>
+                        <p>Berbagai treatment wajah untuk kulit glowing, acne treatment hingga anti-aging</p>
+                        <a href="#services" onclick="navigateTo('services')" class="btn btn-secondary">Lihat Detail →</a>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        💄
+                    </div>
+                    <div class="service-content">
+                        <h3>Makeup & Styling</h3>
+                        <p>Makeup flawless untuk momen spesial Anda, dari party hingga bridal makeup</p>
+                        <a href="#services" onclick="navigateTo('services')" class="btn btn-secondary">Lihat Detail →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Why Choose Us -->
+        <section style="background: var(--neutral);">
+            <div class="section-header">
+                <h2>Kenapa Memilih <span class="script-text">Salon Cantik Alami?</span></h2>
+            </div>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <div class="icon">💎</div>
+                    <h3>Beautician Profesional</h3>
+                    <p>Tim bersertifikat dengan pengalaman 5-10 tahun di bidang kecantikan</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">✨</div>
+                    <h3>Produk Premium</h3>
+                    <p>L'Oreal, Kerastase, The Body Shop - original & terjamin kualitasnya</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🏆</div>
+                    <h3>Hasil Terjamin</h3>
+                    <p>Konsultasi gratis, hasil sesuai ekspektasi Anda atau kami perbaiki</p>
+                </div>
+                <div class="feature-item">
+                    <div class="icon">🕐</div>
+                    <h3>Flexible Booking</h3>
+                    <p>Buka setiap hari, booking via WhatsApp mudah dan cepat</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Testimonials -->
+        <section>
+            <div class="section-header">
+                <h2>Apa Kata Mereka?</h2>
+                <p>Testimoni dari client-client kami yang puas</p>
+            </div>
+            <div class="testimonials-container">
+                <div class="testimonial active">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Hair spa nya the best! Rambut yang tadinya kering dan rusak jadi lembut dan sehat lagi. Mbak-mbaknya juga ramah dan professional. Pasti balik lagi!"</p>
+                    <p class="testimonial-author">— Dinda Amelia, Kemang</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Makeup bridesmaid di sini untuk wedding temen. Hasilnya natural tapi glowing, tahan seharian. Harga juga reasonable. Highly recommended!"</p>
+                    <p class="testimonial-author">— Sarah Wijaya, Pondok Indah</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Langganan potong rambut di sini hampir 2 tahun. Selalu puas sama hasilnya. Tempatnya bersih, alatnya lengkap, harganya pas di kantong."</p>
+                    <p class="testimonial-author">— Rika Putri, Lebak Bulus</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★☆</div>
+                    <p class="testimonial-text">"Facial acne treatment nya bagus, jerawat berkurang setelah 3x treatment. Cuma kadang harus booking jauh-jauh hari karena suka penuh. Overall recommended!"</p>
+                    <p class="testimonial-author">— Lina Kusuma, Cilandak</p>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <p class="testimonial-text">"Eyelash extension nya natural dan rapi. Bertahan 3 minggu++. Mbaknya sabar dan detail. Tempatnya juga cozy banget, berasa spa hotel bintang 5!"</p>
+                    <p class="testimonial-author">— Putri Maharani, Senopati</p>
+                </div>
+                <div class="testimonial-nav">
+                    <button class="active" onclick="showTestimonial(0)"></button>
+                    <button onclick="showTestimonial(1)"></button>
+                    <button onclick="showTestimonial(2)"></button>
+                    <button onclick="showTestimonial(3)"></button>
+                    <button onclick="showTestimonial(4)"></button>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Instagram Feed -->
+        <section style="background: var(--neutral);">
+            <div class="section-header">
+                <h2>Follow Kami di Instagram</h2>
+                <p>@saloncantikalami - Tips kecantikan & promo terbaru!</p>
+            </div>
+            <div class="instagram-grid">
+                <div class="instagram-item">📸</div>
+                <div class="instagram-item">💇</div>
+                <div class="instagram-item">💄</div>
+                <div class="instagram-item">✨</div>
+                <div class="instagram-item">💅</div>
+                <div class="instagram-item">🌸</div>
+            </div>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://instagram.com/saloncantikalami" target="_blank" class="btn btn-primary">Follow Instagram</a>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section>
+            <div class="cta-section">
+                <h2>Siap Tampil Lebih Cantik?</h2>
+                <p>Booking sekarang dan dapatkan konsultasi GRATIS dengan beautician kami</p>
+                <a href="https://wa.me/6282199887766?text=Halo%20Salon%20Cantik%20Alami%2C%20saya%20ingin%20booking%20appointment" class="btn btn-secondary" target="_blank" style="font-size: 1.2rem; padding: 1rem 2rem;">Booking via WhatsApp</a>
+            </div>
+        </section>
+    </div>
+    
+    <!-- SERVICES PAGE -->
+    <div id="services" class="page-content">
+        <div class="page-header">
+            <div class="breadcrumb">
+                <a href="#home" onclick="navigateTo('home')">Home</a> > Layanan
+            </div>
+            <h1>Layanan & Harga</h1>
+            <p>Semua layanan by appointment. Konsultasi gratis sebelum treatment.</p>
+        </div>
+        
+        <section>
+            <!-- Hair Services -->
+            <div class="service-category">
+                <h3>✂️ Hair Services</h3>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Potong Rambut Wanita</h4>
+                        <p class="service-description">Basic cut dengan konsultasi model sesuai bentuk wajah</p>
+                        <p class="service-duration">Durasi: 30-45 menit</p>
+                    </div>
+                    <div class="service-price">Rp 75.000</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Potong Rambut Pria</h4>
+                        <p class="service-description">Modern cut, classic, atau model terkini</p>
+                        <p class="service-duration">Durasi: 20-30 menit</p>
+                    </div>
+                    <div class="service-price">Rp 50.000</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Creambath</h4>
+                        <p class="service-description">Deep conditioning treatment untuk rambut kering dan rusak</p>
+                        <p class="service-duration">Durasi: 60 menit</p>
+                    </div>
+                    <div class="service-price">Rp 100.000</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Hair Spa Premium</h4>
+                        <p class="service-description">Treatment lengkap: creambath + steam + massage kepala + hair mask</p>
+                        <p class="service-duration">Durasi: 90 menit</p>
+                    </div>
+                    <div class="service-price">Rp 150.000</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Smoothing/Rebonding</h4>
+                        <p class="service-description">Rambut lurus natural tahan 3-6 bulan. Harga tergantung panjang rambut.</p>
+                        <p class="service-duration">Durasi: 3-4 jam</p>
+                    </div>
+                    <div class="service-price">Rp 500k - 1jt</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Coloring (Full)</h4>
+                        <p class="service-description">Cat rambut full dari akar sampai ujung. Semua warna available.</p>
+                        <p class="service-duration">Durasi: 2-3 jam</p>
+                    </div>
+                    <div class="service-price">Rp 400k - 800k</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Highlight/Balayage</h4>
+                        <p class="service-description">Teknik pewarnaan modern untuk tampilan natural & dimensional</p>
+                        <p class="service-duration">Durasi: 3-5 jam</p>
+                    </div>
+                    <div class="service-price">Rp 600k - 1.2jt</div>
+                </div>
+            </div>
+            
+            <!-- Facial & Skin Care -->
+            <div class="service-category">
+                <h3>💆‍♀️ Facial & Skin Care</h3>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Facial Basic</h4>
+                        <p class="service-description">Pembersihan wajah, ekstraksi komedo, masker. Cocok untuk semua jenis kulit.</p>
+                        <p class="service-duration">Durasi: 60 menit</p>
+                    </div>
+                    <div class="service-price">Rp 100.000</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Facial Acne Treatment</h4>
+                        <p class="service-description">Treatment khusus kulit berjerawat dengan produk anti-bacterial</p>
+                        <p class="service-duration">Durasi: 75 menit</p>
+                    </div>
+                    <div class="service-price">Rp 150.000</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Facial Whitening</h4>
+                        <p class="service-description">Mencerahkan dan meratakan warna kulit wajah</p>
+                        <p class="service-duration">Durasi: 75 menit</p>
+                    </div>
+                    <div class="service-price">Rp 175.000</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Facial Anti-Aging</h4>
+                        <p class="service-description">Treatment dengan serum collagen untuk kulit mature</p>
+                        <p class="service-duration">Durasi: 90 menit</p>
+                    </div>
+                    <div class="service-price">Rp 200.000</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Paket Facial 5x</h4>
+                        <p class="service-description">Hemat Rp 50k! Pilih jenis facial sesuai kebutuhan</p>
+                    </div>
+                    <div class="service-price">Rp 450.000</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Peeling/Brightening</h4>
+                        <p class="service-description">Chemical peeling ringan untuk regenerasi kulit</p>
+                        <p class="service-duration">Durasi: 60 menit</p>
+                    </div>
+                    <div class="service-price">Rp 250.000</div>
+                </div>
+            </div>
+            
+            <!-- Makeup & Styling -->
+            <div class="service-category">
+                <h3>💄 Makeup & Styling</h3>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Makeup Natural/Party</h4>
+                        <p class="service-description">Makeup flawless untuk acara casual, party, atau wisuda</p>
+                        <p class="service-duration">Durasi: 60 menit</p>
+                    </div>
+                    <div class="service-price">Rp 200.000</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Makeup Bridesmaid</h4>
+                        <p class="service-description">Makeup tahan lama untuk bridesmaid/keluarga pengantin</p>
+                        <p class="service-duration">Durasi: 75 menit</p>
+                    </div>
+                    <div class="service-price">Rp 300.000</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Makeup Bride (Akad)</h4>
+                        <p class="service-description">Makeup + hairdo untuk akad nikah. Termasuk touch-up</p>
+                        <p class="service-duration">Durasi: 2-3 jam</p>
+                    </div>
+                    <div class="service-price">Rp 1.500.000</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Makeup Bride (Resepsi)</h4>
+                        <p class="service-description">Makeup + hairdo glamour untuk resepsi. Include trial & touch-up</p>
+                        <p class="service-duration">Durasi: 3-4 jam</p>
+                    </div>
+                    <div class="service-price">Rp 2.500.000</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Paket Makeup Pengantin (Akad + Resepsi)</h4>
+                        <p class="service-description">Hemat Rp 500k! Lengkap dengan trial makeup</p>
+                    </div>
+                    <div class="service-price">Rp 3.500.000</div>
+                </div>
+            </div>
+            
+            <!-- Nail & Body Care -->
+            <div class="service-category">
+                <h3>💅 Nail & Body Care</h3>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Manicure</h4>
+                        <p class="service-description">Perawatan kuku tangan + cat kuku (reguler)</p>
+                        <p class="service-duration">Durasi: 45 menit</p>
+                    </div>
+                    <div class="service-price">Rp 75.000</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Pedicure</h4>
+                        <p class="service-description">Perawatan kuku kaki + scrub + cat kuku</p>
+                        <p class="service-duration">Durasi: 60 menit</p>
+                    </div>
+                    <div class="service-price">Rp 85.000</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Gel Polish (Tangan)</h4>
+                        <p class="service-description">Cat kuku gel tahan 2-3 minggu tanpa mengelupas</p>
+                        <p class="service-duration">Durasi: 60 menit</p>
+                    </div>
+                    <div class="service-price">Rp 120.000</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Eyelash Extension</h4>
+                        <p class="service-description">Natural, volume, atau dramatic. Tahan 3-4 minggu</p>
+                        <p class="service-duration">Durasi: 90-120 menit</p>
+                    </div>
+                    <div class="service-price">Rp 200k - 350k</div>
+                </div>
+                <div class="service-item">
+                    <div class="service-info">
+                        <h4>Waxing (Area kecil)</h4>
+                        <p class="service-description">Ketiak, kaki, tangan, bikini line. Harga vary per area</p>
+                        <p class="service-duration">Durasi: 30-60 menit</p>
+                    </div>
+                    <div class="service-price">Rp 50k - 150k</div>
+                </div>
+            </div>
+            
+            <!-- Booking CTA -->
+            <div class="cta-section" style="margin-top: 3rem;">
+                <h2>Tertarik dengan layanan kami?</h2>
+                <p>Konsultasi gratis untuk treatment yang sesuai kebutuhan Anda</p>
+                <a href="https://wa.me/6282199887766?text=Halo%20Salon%20Cantik%20Alami%2C%20saya%20ingin%20booking%20appointment" class="btn btn-secondary" target="_blank" style="font-size: 1.1rem; padding: 1rem 2rem;">Booking Sekarang via WhatsApp</a>
+                <p style="margin-top: 1rem; font-size: 0.9rem;">Atau hubungi: <a href="tel:+6282199887766" style="color: var(--white); text-decoration: underline;">0821-9988-7766</a></p>
+            </div>
+        </section>
+    </div>
+    
+    <!-- GALLERY PAGE -->
+    <div id="gallery" class="page-content">
+        <div class="page-header">
+            <div class="breadcrumb">
+                <a href="#home" onclick="navigateTo('home')">Home</a> > Gallery
+            </div>
+            <h1>Hasil Karya Kami</h1>
+            <p>Before & after transformations dari client-client kami</p>
+        </div>
+        
+        <section>
+            <div class="gallery-grid">
+                <div class="gallery-item">💇‍♀️</div>
+                <div class="gallery-item">✨</div>
+                <div class="gallery-item">💄</div>
+                <div class="gallery-item">🌟</div>
+                <div class="gallery-item">💅</div>
+                <div class="gallery-item">🎨</div>
+                <div class="gallery-item">👰</div>
+                <div class="gallery-item">💆‍♀️</div>
+                <div class="gallery-item">🌸</div>
+                <div class="gallery-item">✂️</div>
+                <div class="gallery-item">🌺</div>
+                <div class="gallery-item">💖</div>
+                <div class="gallery-item">🦋</div>
+                <div class="gallery-item">🌹</div>
+                <div class="gallery-item">🎀</div>
+                <div class="gallery-item">⭐</div>
+                <div class="gallery-item">🌷</div>
+                <div class="gallery-item">💐</div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <h3 style="color: var(--primary); margin-bottom: 1rem;">Lihat lebih banyak di Instagram kami!</h3>
+                <a href="https://instagram.com/saloncantikalami" target="_blank" class="btn btn-primary">Follow @saloncantikalami</a>
+            </div>
+        </section>
+    </div>
+    
+    <!-- ABOUT PAGE -->
+    <div id="about" class="page-content">
+        <div class="page-header">
+            <div class="breadcrumb">
+                <a href="#home" onclick="navigateTo('home')">Home</a> > Tentang Kami
+            </div>
+            <h1>Tentang Salon Cantik Alami</h1>
+        </div>
+        
+        <section>
+            <div style="max-width: 800px; margin: 0 auto 4rem; text-align: center;">
+                <p style="font-size: 1.1rem; line-height: 1.8; color: #555;">
+                    Salon Cantik Alami hadir dengan misi menghadirkan kecantikan alami setiap wanita Indonesia. 
+                    Dengan pengalaman 3+ tahun dan tim beautician bersertifikat profesional, kami menggunakan 
+                    produk berkualitas premium yang aman untuk semua jenis kulit dan rambut.
+                </p>
+                <p style="font-size: 1.1rem; line-height: 1.8; color: #555; margin-top: 1rem;">
+                    Dari perawatan rambut, facial treatment, hingga makeup untuk acara spesial - kami hadir 
+                    sebagai partner kecantikan terpercaya Anda. Suasana salon yang nyaman, pelayanan ramah, 
+                    dan hasil yang memuaskan adalah komitmen kami.
+                </p>
+                <p style="font-size: 1.2rem; line-height: 1.8; color: var(--primary); font-weight: 600; margin-top: 1.5rem;">
+                    Cantik itu investasi, bukan biaya. Mari rawat kecantikan Anda bersama ahlinya.
+                </p>
+                <p style="font-size: 1rem; line-height: 1.8; color: #666; margin-top: 1.5rem; font-style: italic;">
+                    Didirikan tahun 2020 oleh Rina Maharani, seorang beautician berpengalaman 10+ tahun 
+                    yang memiliki visi menghadirkan standar salon profesional dengan harga terjangkau untuk 
+                    wanita Indonesia.
+                </p>
+            </div>
+            
+            <div class="section-header">
+                <h2>Tim Beautician Kami</h2>
+                <p>Profesional bersertifikat dengan pengalaman bertahun-tahun</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="team-photo">👩‍💼</div>
+                    <div class="team-info">
+                        <h3>Rina Maharani</h3>
+                        <p class="team-role">Owner & Senior Beautician</p>
+                        <p class="team-bio">10+ tahun pengalaman di industri kecantikan. Spesialisasi: Bridal makeup & hair coloring</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-photo">👩‍🦰</div>
+                    <div class="team-info">
+                        <h3>Siti Nurhaliza</h3>
+                        <p class="team-role">Hair Specialist</p>
+                        <p class="team-bio">Bersertifikat L'Oreal Professional. Expert di smoothing, coloring, dan hair treatment</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-photo">👩‍⚕️</div>
+                    <div class="team-info">
+                        <h3>Dewi Lestari</h3>
+                        <p class="team-role">Facial & Skin Care Specialist</p>
+                        <p class="team-bio">Lulusan beauty therapy. Spesialisasi treatment kulit berjerawat dan anti-aging</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <div class="team-photo">👩‍🎨</div>
+                    <div class="team-info">
+                        <h3>Maya Sari</h3>
+                        <p class="team-role">Nail Artist</p>
+                        <p class="team-bio">Certified nail technician. Ahli gel polish, nail art, dan eyelash extension</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-header" style="margin-top: 4rem;">
+                <h2>Sertifikasi & Produk Kami</h2>
+            </div>
+            
+            <div class="certifications">
+                <div class="cert-badge">
+                    🎓
+                    <p style="font-weight: 600; margin-top: 0.5rem;">Beautician Bersertifikat</p>
+                </div>
+                <div class="cert-badge">
+                    ✅
+                    <p style="font-weight: 600; margin-top: 0.5rem;">L'Oreal Professional</p>
+                </div>
+                <div class="cert-badge">
+                    ✅
+                    <p style="font-weight: 600; margin-top: 0.5rem;">Kerastase</p>
+                </div>
+                <div class="cert-badge">
+                    ✅
+                    <p style="font-weight: 600; margin-top: 0.5rem;">The Body Shop</p>
+                </div>
+                <div class="cert-badge">
+                    🛡️
+                    <p style="font-weight: 600; margin-top: 0.5rem;">Produk 100% Original</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- CONTACT PAGE -->
+    <div id="contact" class="page-content">
+        <div class="page-header">
+            <div class="breadcrumb">
+                <a href="#home" onclick="navigateTo('home')">Home</a> > Kontak
+            </div>
+            <h1>Hubungi Kami</h1>
+            <p>Kami siap membantu mewujudkan kecantikan impian Anda</p>
+        </div>
+        
+        <section>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div style="font-size: 1.8rem; min-width: 40px; text-align: center; flex-shrink: 0;">📍</div>
+                        <div class="contact-details">
+                            <h3>Alamat</h3>
+                            <p>Salon Cantik Alami</p>
+                            <p>Jl. Kemang Raya No. 123, Kemang</p>
+                            <p>Jakarta Selatan 12730</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div style="font-size: 1.8rem; min-width: 40px; text-align: center; flex-shrink: 0;">💬</div>
+                        <div class="contact-details">
+                            <h3>WhatsApp</h3>
+                            <p><a href="https://wa.me/6282199887766?text=Halo%20Salon%20Cantik%20Alami%2C%20saya%20ingin%20booking%20appointment" target="_blank">0821-9988-7766</a></p>
+                            <p style="font-size: 0.85rem; color: #999;">Klik untuk chat langsung</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div style="font-size: 1.8rem; min-width: 40px; text-align: center; flex-shrink: 0;">📞</div>
+                        <div class="contact-details">
+                            <h3>Telepon</h3>
+                            <p><a href="tel:+622171998877">(021) 7199-8877</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div style="font-size: 1.8rem; min-width: 40px; text-align: center; flex-shrink: 0;">📧</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:hello@saloncantikalami.com">hello@saloncantikalami.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div style="font-size: 1.8rem; min-width: 40px; text-align: center; flex-shrink: 0;">🕐</div>
+                        <div class="contact-details">
+                            <h3>Jam Operasional</h3>
+                            <p>Senin - Sabtu: 10.00 - 20.00 WIB</p>
+                            <p>Minggu: 10.00 - 18.00 WIB</p>
+                            <p style="font-size: 0.85rem; color: #999; font-style: italic;">(By appointment only)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div style="font-size: 1.8rem; min-width: 40px; text-align: center; flex-shrink: 0;">💳</div>
+                        <div class="contact-details">
+                            <h3>Metode Pembayaran</h3>
+                            <p>Cash, Debit Card, Credit Card, QRIS</p>
+                            <p style="font-size: 0.85rem; color: #999;">(GoPay, OVO, Dana, ShopeePay)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div style="font-size: 1.8rem; min-width: 40px; text-align: center; flex-shrink: 0;">📱</div>
+                        <div class="contact-details">
+                            <h3>Social Media</h3>
+                            <p><a href="https://instagram.com/saloncantikalami" target="_blank">Instagram: @saloncantikalami</a></p>
+                            <p><a href="https://facebook.com/saloncantikalami" target="_blank">Facebook: Salon Cantik Alami</a></p>
+                            <p><a href="https://tiktok.com/@saloncantikalami" target="_blank">TikTok: @saloncantikalami</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="map-container">
+                    <div style="width: 100%; height: 400px; background: linear-gradient(135deg, var(--secondary) 0%, var(--primary) 100%); border-radius: 15px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; text-align: center; color: var(--white); box-sizing: border-box;">
+                        <div style="font-size: 4rem; margin-bottom: 1rem;">📍</div>
+                        <h3 style="margin-bottom: 0.5rem; color: var(--white);">Lokasi Kami</h3>
+                        <p style="margin-bottom: 1.5rem; line-height: 1.6;">Jl. Kemang Raya No. 123, Kemang<br>Jakarta Selatan 12730</p>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Kemang+Raya+Jakarta+Selatan" target="_blank" class="btn btn-secondary" style="margin-top: 1rem; display: inline-block; text-decoration: none;">
+                            🗺️ Buka di Google Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2 style="text-align: center; color: var(--primary); margin-bottom: 1rem;">Booking Request Form</h2>
+                <p style="text-align: center; color: #666; margin-bottom: 2rem;">Isi form di bawah untuk booking appointment</p>
+                
+                <form id="bookingForm">
+                    <div class="form-group">
+                        <label for="nama">Nama Lengkap *</label>
+                        <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap Anda">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="whatsapp">Nomor WhatsApp *</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" required placeholder="08xx-xxxx-xxxx">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="layanan">Layanan yang Diminati *</label>
+                        <select id="layanan" name="layanan" required>
+                            <option value="">-- Pilih Layanan --</option>
+                            <option value="Hair Treatment">Hair Treatment</option>
+                            <option value="Facial & Spa">Facial & Spa</option>
+                            <option value="Makeup & Styling">Makeup & Styling</option>
+                            <option value="Nail & Body Care">Nail & Body Care</option>
+                            <option value="Bridal Package">Bridal Package</option>
+                            <option value="Lainnya">Lainnya</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="tanggal">Tanggal & Waktu Preferred</label>
+                        <input type="datetime-local" id="tanggal" name="tanggal">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="pesan">Pesan/Pertanyaan</label>
+                        <textarea id="pesan" name="pesan" placeholder="Ada pertanyaan atau request khusus?"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
+                        💬 Kirim Booking Request via WhatsApp
+                    </button>
+                </form>
+            </div>
+            
+            <!-- FAQ Section -->
+            <div class="section-header" style="margin-top: 5rem;">
+                <h2>Pertanyaan yang Sering Diajukan</h2>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Apakah harus booking dulu?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, kami melayani by appointment untuk memastikan pelayanan maksimal. Booking bisa via WhatsApp minimal 1 hari sebelumnya.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Berapa lama durasi treatment?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Tergantung jenis layanan. Facial 60-90 menit, hair coloring 2-3 jam, makeup 60-120 menit. Detail durasi ada di halaman Layanan.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Apakah produk yang digunakan aman?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>100% aman dan original. Kami hanya menggunakan produk dari brand terpercaya seperti L'Oreal, Kerastase, dan The Body Shop.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Bisa konsultasi dulu sebelum treatment?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Bisa! Konsultasi dengan beautician kami gratis. Kami akan assessment kondisi rambut/kulit dan recommend treatment yang tepat.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Bagaimana jika hasil tidak sesuai ekspektasi?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Kepuasan Anda prioritas kami. Jika ada yang kurang sesuai, kami akan perbaiki tanpa biaya tambahan (terms & conditions apply).</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Apakah ada paket hemat?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Kami punya paket facial 5x dan paket bridal makeup (akad + resepsi) dengan harga lebih hemat. Cek halaman Layanan untuk detail.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Apakah menerima pembayaran cashless?</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ya, kami menerima Cash, Debit/Credit Card, dan QRIS (GoPay, OVO, Dana, ShopeePay). Pembayaran bisa dilakukan setelah treatment selesai.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Salon Cantik Alami</h3>
+                <p style="margin-bottom: 1rem;">Kecantikan alami dari ahlinya. Perawatan profesional dengan harga terjangkau untuk wanita Indonesia.</p>
+                <div class="social-icons">
+                    <a href="https://instagram.com/saloncantikalami" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    <a href="https://facebook.com/saloncantikalami" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                        </svg>
+                    </a>
+                    <a href="https://tiktok.com/@saloncantikalami" target="_blank" rel="noopener noreferrer" aria-label="TikTok">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/6282199887766" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home" onclick="navigateTo('home')">Home</a></li>
+                    <li><a href="#services" onclick="navigateTo('services')">Layanan</a></li>
+                    <li><a href="#gallery" onclick="navigateTo('gallery')">Gallery</a></li>
+                    <li><a href="#about" onclick="navigateTo('about')">Tentang Kami</a></li>
+                    <li><a href="#contact" onclick="navigateTo('contact')">Kontak</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Kontak Info</h3>
+                <ul>
+                    <li>📍 Jl. Kemang Raya No. 123</li>
+                    <li style="margin-left: 1.2rem;">Jakarta Selatan 12730</li>
+                    <li>📞 (021) 7199-8877</li>
+                    <li>📱 0821-9988-7766</li>
+                    <li>📧 hello@saloncantikalami.com</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Jam Operasional</h3>
+                <ul>
+                    <li>Senin - Sabtu</li>
+                    <li>10.00 - 20.00 WIB</li>
+                    <li style="margin-top: 0.5rem;">Minggu</li>
+                    <li>10.00 - 18.00 WIB</li>
+                    <li style="margin-top: 0.5rem; font-style: italic; font-size: 0.9rem;">(By appointment only)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Salon Cantik Alami. All rights reserved.</p>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem;">Powered by <a href="#" style="color: var(--secondary);">DigiLokal22</a></p>
+        </div>
+    </footer>
+    
+    <script>
+        // Navigation between pages
+        function navigateTo(page) {
+            // Hide all pages
+            document.querySelectorAll('.page-content').forEach(p => {
+                p.classList.remove('active');
+            });
+            
+            // Show selected page
+            document.getElementById(page).classList.add('active');
+            
+            // Close mobile menu if open
+            document.getElementById('navMenu').classList.remove('active');
+            
+            // Scroll to top
+            window.scrollTo(0, 0);
+            
+            // Update URL hash without using pushState (to avoid security error)
+            if (window.location.hash !== '#' + page) {
+                window.location.hash = page;
+            }
+        }
+        
+        // Mobile menu toggle
+        function toggleMenu() {
+            document.getElementById('navMenu').classList.toggle('active');
+        }
+        
+        // Testimonial carousel
+        let currentTestimonial = 0;
+        
+        function showTestimonial(index) {
+            const testimonials = document.querySelectorAll('.testimonial');
+            const buttons = document.querySelectorAll('.testimonial-nav button');
+            
+            testimonials.forEach((t, i) => {
+                t.classList.remove('active');
+                buttons[i].classList.remove('active');
+            });
+            
+            testimonials[index].classList.add('active');
+            buttons[index].classList.add('active');
+            currentTestimonial = index;
+        }
+        
+        // Auto-rotate testimonials
+        setInterval(() => {
+            currentTestimonial = (currentTestimonial + 1) % 5;
+            showTestimonial(currentTestimonial);
+        }, 5000);
+        
+        // FAQ accordion
+        document.addEventListener('click', (e) => {
+            if (e.target.closest('.faq-question')) {
+                const faqItem = e.target.closest('.faq-item');
+                faqItem.classList.toggle('active');
+            }
+        });
+        
+        // Back to top button
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
+        
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Sticky header effect
+        let lastScroll = 0;
+        const header = document.querySelector('header');
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                header.style.transform = 'translateY(0)';
+            }
+            
+            lastScroll = currentScroll;
+        });
+        
+        // Contact form submission
+        document.getElementById('bookingForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const nama = document.getElementById('nama').value;
+            const whatsapp = document.getElementById('whatsapp').value;
+            const layanan = document.getElementById('layanan').value;
+            const tanggal = document.getElementById('tanggal').value;
+            const pesan = document.getElementById('pesan').value;
+            
+            // Format tanggal
+            let tanggalText = '';
+            if (tanggal) {
+                const date = new Date(tanggal);
+                tanggalText = date.toLocaleDateString('id-ID', {
+                    weekday: 'long',
+                    year: 'numeric',
+                    month: 'long',
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+            }
+            
+            // Create WhatsApp message
+            let message = `Halo Salon Cantik Alami! 🌸\n\n`;
+            message += `Saya ingin booking appointment:\n\n`;
+            message += `📝 Nama: ${nama}\n`;
+            message += `💆‍♀️ Layanan: ${layanan}\n`;
+            if (tanggalText) {
+                message += `📅 Waktu: ${tanggalText}\n`;
+            }
+            if (pesan) {
+                message += `💬 Pesan: ${pesan}\n`;
+            }
+            message += `\nTerima kasih! 🙏`;
+            
+            // Encode and redirect to WhatsApp
+            const encodedMessage = encodeURIComponent(message);
+            const waNumber = '6282199887766';
+            window.open(`https://wa.me/${waNumber}?text=${encodedMessage}`, '_blank');
+        });
+        
+        // Handle initial page load with hash
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.substring(1);
+            if (hash && ['home', 'services', 'gallery', 'about', 'contact'].includes(hash)) {
+                navigateTo(hash);
+            }
+        });
+        
+        // Handle browser back/forward
+        window.addEventListener('popstate', () => {
+            const hash = window.location.hash.substring(1) || 'home';
+            if (['home', 'services', 'gallery', 'about', 'contact'].includes(hash)) {
+                navigateTo(hash);
+            }
+        });
+        
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && !href.match(/#(home|services|gallery|about|contact)/)) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({ behavior: 'smooth' });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
