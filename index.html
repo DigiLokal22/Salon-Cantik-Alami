@@ -428,7 +428,7 @@
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 2rem;
             margin-bottom: 2rem;
             width: 100%;
@@ -445,6 +445,8 @@
         
         .footer-section ul li {
             margin-bottom: 0.5rem;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
         
         .footer-section a {
@@ -452,6 +454,7 @@
             text-decoration: none;
             opacity: 0.8;
             transition: opacity 0.3s;
+            word-break: break-all;
         }
         
         .footer-section a:hover {
@@ -1032,6 +1035,10 @@
                 width: 50px;
                 height: 50px;
                 font-size: 1.5rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
             }
         }
         
